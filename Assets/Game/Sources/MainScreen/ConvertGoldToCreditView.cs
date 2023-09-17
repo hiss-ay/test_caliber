@@ -25,12 +25,12 @@ namespace Game.Sources.MainScreen
 
         public void SetGoldAmount(int amount)
         {
-            goldAmount.text = $"{UIHelper.IntegerToString(amount)}";
+            goldAmount.text = UIHelper.IntegerToString(amount);
         }
         
         public void SetCreditAmount(int amount)
         {
-            creditAmount.text = $"{UIHelper.IntegerToString(amount)}";
+            creditAmount.text = UIHelper.IntegerToString(amount);
         }
         
         private void OnClick()

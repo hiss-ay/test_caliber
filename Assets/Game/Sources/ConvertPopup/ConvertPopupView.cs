@@ -43,12 +43,12 @@ namespace Game.Sources.ConvertPopup
 
         public void SetGoldAmount(int amount)
         {
-            goldAmount.text = $"{UIHelper.IntegerToString(amount)}";
+            goldAmount.text = UIHelper.IntegerToString(amount);
         }
         
         public void SetCreditAmount(int amount)
         {
-            creditAmount.text = $"{UIHelper.IntegerToString(amount)}";
+            creditAmount.text = UIHelper.IntegerToString(amount);
         }
         
         public void ToggleButtonInteractable(bool value)
@@ -58,7 +58,7 @@ namespace Game.Sources.ConvertPopup
 
         public void ResetView()
         {
-            field.text = $"0";
+            field.text = "0";
         }
         
         private void OnValueChangedHandler(string value)
